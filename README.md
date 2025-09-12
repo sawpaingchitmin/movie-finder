@@ -1,12 +1,77 @@
-# React + Vite
+# 🎬 Movie Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React application to search, browse, and save your favorite movies using the [TMDB (The Movie Database)](https://www.themoviedb.org/) API.  
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🔍 **Search movies** by title using TMDB API  
+- 📄 **View movie details** (poster, overview, rating, release year)  
+- ❤️ **Add/Remove favorites** (saved in `localStorage`)  
+- 📱 **Responsive design** for desktop, tablet, and mobile  
+- ⏮️ **Pagination** to navigate through multiple search results  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Technologies Used
+
+- [React](https://reactjs.org/) (Functional components + Hooks)  
+- [React Router](https://reactrouter.com/) for routing  
+- [Axios](https://axios-http.com/) for API calls  
+- [TMDB API](https://developers.themoviedb.org/3) for movie data  
+- **LocalStorage** for persisting favorites  
+- **CSS Grid & Flexbox** for layout and responsiveness  
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/your-username/movie-finder.git
+cd movie-finder
+```
+
+### 2. Install dependencies
+```bash
+npm install
+```
+
+### 3. Get a TMDB API Key
+- Go to [TMDB API](https://www.themoviedb.org/documentation/api)  
+- Sign up for a free account and generate an API key  
+- Create a `.env` file in the project root and add your key:
+```bash
+VITE_API_KEY=your_api_key_here
+```
+
+### 4. Run the app
+```bash
+npm run dev
+```
+
+## 📂 Project Structure
+```bash
+src/
+│── components/
+│   ├── Header.jsx
+│   ├── MovieCard.jsx
+│   └── SearchBar.jsx
+│
+│── context/
+│   └── FavoritesContext.jsx
+│
+│── pages/
+│   ├── Favorites.jsx
+│   ├── Home.jsx
+│   ├── MovieDetails.jsx
+│   └── PopularMovies.jsx
+│
+│── App.jsx
+│── main.jsx
+│── App.css
+```
+
+## 🌍 Live Demo
+[Try it here](https://movie-finder-h71v.onrender.com/)  
+
+
