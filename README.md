@@ -27,7 +27,7 @@ A simple React application to search, browse, and save your favorite movies usin
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/movie-finder.git
+git clone https://github.com/sawpaingchitmin/movie-finder.git
 cd movie-finder
 ```
 
@@ -66,9 +66,10 @@ src/
 │   ├── MovieDetails.jsx
 │   └── PopularMovies.jsx
 │
-│── App.jsx
-│── main.jsx
 │── App.css
+│── App.jsx
+│── index.css
+│── main.jsx
 ```
 
 ## 🌍 Live Demo
