@@ -15,7 +15,7 @@ const MovieCard = ({ movie }) => {
       </Link>
       <h3 className="movie-title">{movie.title}</h3>
       <p className="rating">Rating:  {Math.round(movie.vote_average * 10) / 10}</p>
-      <p className="year">Year: {movie.release_date.split("-")[0]}</p>
+      <p className="year">Year: {movie.release_date ? movie.release_date.split("-")[0] : "Unknown"}</p>
       <div className="buttons">
         <button className="add" onClick={() => addFavorite(movie)}>Add</button>
         <button className="remove" onClick={() => removeFavorite(movie.id)}>Remove</button>
